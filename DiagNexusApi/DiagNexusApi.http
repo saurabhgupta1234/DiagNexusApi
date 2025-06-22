@@ -1,0 +1,6 @@
+@DiagNexusApi_HostAddress = http://localhost:5185
+
+GET {{DiagNexusApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
