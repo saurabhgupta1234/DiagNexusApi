@@ -32,7 +32,7 @@ namespace DiagNexusApi.Controllers
         // POST: api/Report/upload
         [HttpPost]
         [Route("upload")]
-        public async Task<ActionResult<string>> UploadReportAsync([FromForm] IFormFile file)
+        public async Task<ActionResult<string>> UploadReportAsync(IFormFile file)
         {
             if (file == null || file.Length == 0)
                 return BadRequest("File is required.");
